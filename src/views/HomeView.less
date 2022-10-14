@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.html,
+.body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .headPage {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #070707;
+  }
+  .mainPage {
+    width: 100%;
+    display: flex;
+    height: calc(100% - 80px);
+    overflow: scroll;
+    .main-left {
+      width: 100px;
+      height: 100%;
+      border: 1px solid #070707;
+    }
+    .main-right {
+      width: calc(100% - 100px);
+      height: 100%;
+      border: 1px solid #070707;
+    }
+  }
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
